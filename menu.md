@@ -23,6 +23,29 @@
 |10. |KEBAB (sos pomidorowy, baranina, kurczak, ser, oregano, sałata)|                   | 26 zł | 29 zł | 32 zł |
 |11. |CDV (nauka, praktyki)|                                                             | 850 zł | 850 zł | 850 zł |
 
+## Pizze wegetariańskie
+
+<img src = "img/pizza7menu.jpg" width = 300>
+
+|Lp. |Pizza klasyczna:                                             |rozmiar: | 30 cm | 50 cm | 60 cm |
+|---|--------------------------------------------------------------|---------|-------|-------|-------|
+|1. |MARGGETITTA (sos pomidorowy, ser, oregano)|                             |20 zł | 23 | 27 |                        |22 zł | 25 | 28 |
+|3. |4SERY (sos pomidorowy, 4sery)|                                          |24 zł | 27 | 30 ||                                   |20 zł | 23 | 31 |
+|5. |HAWAJSKA VEGE (sos pomidorowy, ser, ananas)|                         |24 zł | 26 | 30 |
+
+## Sałaki
+
+Cesar - 15 zł
+Italiano - 20 zł
+Grecka - 15 zł
+Hiszpańska - 20 zł
+
+## Napoje
+
+Woda - 5zł
+Cola - 5 zł
+Soki - 5zł
+
 ## SOSY
 
 <img src = "img/molcajete-vector-illustration.png" width = 300>
@@ -30,3 +53,5 @@
 - SALSA - 3 zł
 - CZOSNKOWY - 3 zł
 - CHILLY - 3 zł
+
+
