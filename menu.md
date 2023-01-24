@@ -54,6 +54,9 @@
 - CZOSNKOWY - 3 zł
 - CHILLY - 3 zł
 
+
+<img src = "img/vecteezy_vector-set-seafood-restaurant-with-fresh-and-natural-food_11060050.jpg" width = 300>
+
 ## Dodatki
 
 1. Cukinia - 5zł
