@@ -35,16 +35,16 @@
 
 ## Sałaki
 
-Cesar - 15 zł
-Italiano - 20 zł
-Grecka - 15 zł
-Hiszpańska - 20 zł
+1.Cesar - 15 zł
+2.Italiano - 20 zł
+3.Grecka - 15 zł
+4.Hiszpańska - 20 zł
 
 ## Napoje
 
-Woda - 5zł
-Cola - 5 zł
-Soki - 5zł
+1.Woda - 5zł
+2.Cola - 5 zł
+3.Soki - 5zł
 
 ## SOSY
 
@@ -53,5 +53,13 @@ Soki - 5zł
 - SALSA - 3 zł
 - CZOSNKOWY - 3 zł
 - CHILLY - 3 zł
+
+## Dodatki
+
+1. Cukinia - 5zł
+2. Karczochy - 5zł
+3. Krewetki - 20zł
+
+
 
 
