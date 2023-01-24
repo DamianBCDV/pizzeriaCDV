@@ -25,6 +25,8 @@
 
 ## SOSY
 
+<img src = "img/molcajete-vector-illustration.png" width = 300>
+
 - SALSA - 3 zł
 - CZOSNKOWY - 3 zł
 - CHILLY - 3 zł
