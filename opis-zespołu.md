@@ -6,4 +6,6 @@
 
 ## Grafik
 
-#Zespół
+## Kucharz
+
+## Obsługa
