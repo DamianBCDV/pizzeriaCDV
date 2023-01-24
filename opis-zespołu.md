@@ -1,11 +1,16 @@
 # Zespół
 
-## Kierownik
+## Kierownik:
+Maciej M.
 
-## Dostawca
+## Dostawca:
+Tomasz W.
 
-## Grafik
+## Grafik:
+Krzysztof K.
 
 ## Kucharz
+Miłosz W.
 
-## Obsługa
+## Obsługa:
+Katarzyna J.
