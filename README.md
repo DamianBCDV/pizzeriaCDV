@@ -1,2 +1,2 @@
 # pizzeriaCDV
-To jest srona naszej pizzeri.
+To jest strona naszej pizzeri.
