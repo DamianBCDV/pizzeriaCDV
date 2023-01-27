@@ -1,0 +1,189 @@
+Ball ball;
+Paddle paddleLeft;
+Paddle paddleRight;
+
+int scoreLeft = 0;
+int scoreRight = 0;
+
+void setup(){
+  size(1000,800);
+  ball = new Ball(width, height, 30);
+  ball.speedX = 5;
+  ball.speedY = 5;
+  paddleLeft = new Paddle(10, height, 20,200);
+  paddleRight = new Paddle(width -10, height, 20,200);
+
+}
+
+void draw(){
+  background(0,0,0);
+  line(500, -800, 500, 800);
+  stroke(255, 255, 255);
+  ball.move();
+  ball.display();
+  paddleLeft.move();
+  paddleLeft.display();
+  paddleRight.move();
+  paddleRight.display();
+
+stroke(255);
+  if (ball.right() > width) {
+    scoreLeft = scoreLeft + 1;
+    ball.x = width/2;
+    ball.y = height/2;
+  }
+  if (ball.left() < 0) {
+    scoreRight = scoreRight + 1;
+    ball.x = width/2;
+    ball.y = height/2;
+  }
+
+  if (ball.bottom() > height) {
+    ball.speedY = -ball.speedY;
+  }
+
+  if (ball.top() < 0) {
+    ball.speedY = -ball.speedY;
+  }
+  
+  if (paddleLeft.bottom() > height) {
+    paddleLeft.y = height-paddleLeft.h/2;
+  }
+
+  if (paddleLeft.top() < 0) {
+    paddleLeft.y = paddleLeft.h/2;
+  }
+    
+  if (paddleRight.bottom() > height) {
+    paddleRight.y = height-paddleRight.h/2;
+  }
+
+  if (paddleRight.top() < 0) {
+    paddleRight.y = paddleRight.h/2;
+  }
+  
+  if ( ball.left() < paddleLeft.right() && ball.y > paddleLeft.top() && ball.y < paddleLeft.bottom()){
+    ball.speedX = -ball.speedX;
+    ball.speedY = map(ball.y - paddleLeft.y, -paddleLeft.h/2, paddleLeft.h/2, -10, 10);
+  }
+
+  if ( ball.right() > paddleRight.left() && ball.y > paddleRight.top() && ball.y < paddleRight.bottom()) {
+    ball.speedX = -ball.speedX;
+    ball.speedY = map(ball.y - paddleRight.y, -paddleRight.h/2, paddleRight.h/2, -10, 10);
+  }
+  
+  textSize(100);
+  textAlign(CENTER);
+  text(scoreRight, width/2+100, 100); 
+  text(scoreLeft, width/2-100, 100);
+}
+
+void keyPressed(){
+  if(keyCode == UP){
+    paddleRight.speedY=-5;
+  }
+  if(keyCode == DOWN){
+    paddleRight.speedY=5;
+  }
+  if(key == 'w'){
+    paddleLeft.speedY=-5;
+  }
+  if(key == 's'){
+    paddleLeft.speedY=5;
+  }
+}
+
+void keyReleased(){
+  if(keyCode == UP){
+    paddleRight.speedY=0;
+  }
+  if(keyCode == DOWN){
+    paddleRight.speedY=0;
+  }
+  if(key == 'w'){
+    paddleLeft.speedY=0;
+  }
+  if(key == 's'){
+    paddleLeft.speedY=0;
+  }
+}
+
+
+class Ball {
+  float x;
+  float y;
+  float speedX;
+  float speedY;
+  float diameter;
+  
+  Ball(float tempX, float tempY, float tempDiameter) {
+    x = tempX;
+    y = tempY;
+    diameter = tempDiameter;
+    speedX = 0;
+    speedY = 0; 
+  }
+  
+  void move() {
+    y = y + speedY;
+    x = x + speedX;
+  }
+  
+  void display() {
+    fill(255); 
+    ellipse(x,y,diameter,diameter);
+  }
+  float left(){
+    return x-diameter;
+  }
+  float right(){
+    return x+diameter;
+  }
+  float top(){
+    return y-diameter;
+  }
+  float bottom(){
+    return y+diameter;
+  }
+
+}
+
+class Paddle{
+
+  float x;
+  float y;
+  float w;
+  float h;
+  float speedY;
+  float speedX;
+  
+  Paddle(float tempX, float tempY, float tempW, float tempH){
+    x = tempX;
+    y = tempY;
+    w = tempW;
+    h = tempH;
+  }
+
+  void move(){
+    y += speedY;
+    x += speedX;
+  }
+
+  void display(){
+    fill(255);
+    rect(x-w/2,y-h/2,w,h);
+  } 
+  
+  float left(){
+    return x-w/2;
+  }
+  float right(){
+    return x+w/2;
+  }
+  float top(){
+    return y-h/2;
+  }
+  float bottom(){
+    return y+h/2;
+  }
+}
