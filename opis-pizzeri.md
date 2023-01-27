@@ -1,3 +1,5 @@
 # Pizzeria
 
-Opis
+## Najlepsza pizza w mieście!
+
+Zapraszamy
